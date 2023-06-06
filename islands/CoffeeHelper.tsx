@@ -4,26 +4,18 @@ installGlobals();
 import { useCallback, useEffect, useState } from "preact/hooks";
 
 const promptHints = [
-  "Help me to find the best coffee.",
-  "Suggest a coffee based on my preferences.",
-  "Which coffee should I try today?",
-  "Can you recommend a coffee for a beginner?",
-  "What's the most popular coffee choice?",
-  "Find me a coffee with low acidity.",
-  "I need a strong coffee. What do you recommend?",
-  "What's a good coffee for someone who loves chocolate?",
-  "I'm in the mood for a fruity coffee. Any suggestions?",
-  "What coffee pairs well with a croissant?",
-  "Show me some iced coffee options.",
-  "What's a good choice for a cold brew coffee?",
-  "I'd like to try a unique coffee blend. What do you suggest?",
-  "What are some eco-friendly coffee options?",
-  "How do I choose the perfect espresso?",
-  "What's a good coffee for a cozy, rainy day?",
-  "Can you recommend a coffee for a gift?",
-  "I want to try a new coffee bean. What's a good option?",
-  "What are some top-rated coffee roasts?",
-  "How do I pick the right coffee for my French press?",
+  "What is the average time spent on the app per day?",
+  "Which countries do purchasers come from?",
+  "What are the local hours when users are most active?",
+  "How many users have churned in the last week?",
+  "How many matches were played today?",
+  "Which advert type is watched more?",
+  "What is the average of the max levels users reached on their first day?",
+  "How long do organic users spend on the app?",
+  "How many users come from Spain?",
+  "How much sales were made in the last 1 month?",
+  "How much is the profit in the last 1 week?",
+  "What is the percentage of completion of the Tutorial?",
 ];
 
 const promptLength = 280;
@@ -111,7 +103,7 @@ export default function CoffeeHelper() {
           </span>
         </h1>
         <span className="ml-auto my-2 text-gray-500 text-xs hidden md:block">
-          This project is using GPT-3.5 to generate answers.
+          This project is using GPT-3.5 to generate queries.
         </span>
       </div>
       <textarea
@@ -130,7 +122,7 @@ export default function CoffeeHelper() {
       <div className="flex items-start mt-2 flex-col md:flex-row">
         <div className="text-sm text-gray-500 pr-5">
           Write any SQL related text and click "Generate Now" to get a new SQL Query.
-          You can ask for metrics, join methods, or anything else.
+          You can ask for metrics, methods, or anything else.
         </div>
         <button
           type="button"
