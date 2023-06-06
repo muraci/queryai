@@ -16,8 +16,16 @@ const rateLimitMessages = [
 ];
 
 const moderationMessages = [
-  "SQL-related topics only, please! ☕️",
-  "Only questions about SQL are permitted. ☕️",
+  "SQL-related inquiries only, please!",
+  "No non-SQL questions, please.",
+  "Only SQL-related questions are allowed.",
+  "SQL queries only, thank you!",
+  "Please limit your questions to SQL-related topics.",
+  "Keep your inquiries SQL-related, please!",
+  "This is a SQL-only zone.",
+  "Non-SQL questions are off-limits.",
+  "SQL-related topics only, please!",
+  "Only questions about SQL are permitted.",
 ];
 
 const SYSTEM_PROMPT = [
