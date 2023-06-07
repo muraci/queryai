@@ -85,7 +85,7 @@ export default function CoffeeHelper() {
     const data = await response.text();
     setResult(data);
     setLoading(false);
-    setTimer(7);
+    setTimer(30);
     setViewHistory(false);
     setHistory([{ prompt, response: data }, ...history].slice(0, 15));
   }, [prompt, timer]);
