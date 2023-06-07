@@ -5,11 +5,17 @@ import { useCallback, useEffect, useState } from "preact/hooks";
 
 const promptHints = [
   "What is the average time spent on the app per day?",
+  "Find customers who signed up in first quarter of 2023 and who live in the UK.",
+  "The requested statement is asking for a SQL query that will retrieve a list of customers who have spent more than $1000 in the last 30 days.",
+  "I want to calculate the average session duration and average daily session duration by dates",
   "Which countries do purchasers come from?",
+  "Find all users who live in Spain and have over 1000 credits!",
   "What are the local hours when users are most active?",
+  "Find customers who have spent more than $1000 in the last 30 days.",
   "How many users have churned in the last week?",
   "How many matches were played today?",
   "Which advert type is watched more?",
+  "Calculate the sum of salaries from the last year!",
   "What is the average of the max levels users reached on their first day?",
   "How long do organic users spend on the app?",
   "How many users come from Spain?",
@@ -79,7 +85,7 @@ export default function CoffeeHelper() {
     const data = await response.text();
     setResult(data);
     setLoading(false);
-    setTimer(30);
+    setTimer(7);
     setViewHistory(false);
     setHistory([{ prompt, response: data }, ...history].slice(0, 15));
   }, [prompt, timer]);
@@ -162,9 +168,9 @@ export default function CoffeeHelper() {
         <div className="mt-5 border-t" style={{ whiteSpace: "pre-wrap" }}>
           <div className="my-3 text-xl font-semibold text-gray-600 flex flex-col">
             AI'S ANSWER:
-            <span className="w-10 h-px bg-gray-600 mt-1"></span>
+            <span className="w-10 h-px bg-gray-600 mt-1 "></span>
           </div>
-          <p className="bg-gray-800 text-sm text-gray-300 p-4 border rounded-lg shadow-lg">
+          <p className="bg-gray-800 text-sm text-gray-300 p-4 border rounded-lg shadow-lg overflow-x-auto">
             <pre className="language-sql">
             {result}
             </pre>

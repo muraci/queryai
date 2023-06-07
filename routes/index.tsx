@@ -10,6 +10,19 @@ export default function Home() {
           {`
             html, body {
               background-color: #f7fafc;
+              }
+              ::-webkit-scrollbar {
+                width: 12px;
+                height: 12px;
+            }
+            ::-webkit-scrollbar-track {
+                background-color: rgba(229, 231, 235, var(--bg-opacity));                
+            }
+            ::-webkit-scrollbar-thumb {
+                background-color: #666b7a;
+                border-radius: 10px;
+            }
+          </style>
             }
           `}
         </style>
