@@ -3,14 +3,14 @@ import "https://deno.land/x/dotenv/load.ts";
 import * as RateLimiterFlexible from "https://dev.jspm.io/rate-limiter-flexible";
 
 const rateLimitMessages = [
-  "Our QueryAI is currently serving someone else, please give us a moment ⏳",
-  "Hey there! Our QueryAI is currently helping another customer, we'll be with you shortly 😊",
-  "We're sorry, but our QueryAI is currently occupied. Please try again in a few minutes 🙏",
-  "Hang tight! Our QueryAI is currently making someone else's day. We'll be with you soon 😎",
-  "Unfortunately, our QueryAI is currently busy. Can we get back to you in a few moments? 🤔",
-  "Our QueryAI is currently serving another customer. Please wait a few moments before trying again 👌",
-  "We're sorry, but our QueryAI is currently occupied. Please try again later 😔",
-  "Our QueryAI is currently typing up some magic for someone else. We'll be with you shortly ✨",
+  " QueryAI is currently serving someone else, please give us a moment ⏳",
+  "Hey there! QueryAI is currently helping another customer, we'll be with you shortly 😊",
+  "We're sorry, but QueryAI is currently occupied. Please try again in a few minutes 🙏",
+  "Hang tight! QueryAI is currently making someone else's day. We'll be with you soon 😎",
+  "Unfortunately, QueryAI is currently busy. Can we get back to you in a few moments? 🤔",
+  "QueryAI is currently serving another customer. Please wait a few minutes 👌",
+  "We're sorry, but QueryAI is currently occupied. Please try again later 😔",
+  "QueryAI is currently typing up some magic for someone else. We'll be with you shortly ✨",
 ];
 
 const moderationMessages = [
