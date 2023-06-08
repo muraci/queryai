@@ -32,7 +32,7 @@ export default function Home() {
           <CoffeeHelper />
         </main>
         <footer className="text-gray-500 text-xs text-center pt-10 pb-2 md:text-right">
-          Inspired by this <a href="https://baristai.deno.dev/">project</a>💡and magic not used 🧙‍♂️
+          Inspired by this <a href="https://baristai.deno.dev/" target="_blank">project</a>💡and magic not used 🧙‍♂️
         </footer>
       </div>
     </>
