@@ -9,8 +9,8 @@ serve(async (_req: Request) => {
   const id = 1;
 
   const item = {
-    prompt: CoffeeHelper.prompt,
-    result: CoffeeHelper.result,
+    prompt: CoffeeHelper.query,
+    result: CoffeeHelper.generatedMessage,
     id,
   };
 
