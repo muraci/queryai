@@ -1,7 +1,7 @@
-import { CoffeeHelper }from "../islands/CoffeeHelper.tsx";
-
-
+import { handler }from "../islands/gpt.tsx";
 import { serve } from "$std/http/server.ts";
+
+
 // Open the Deno KV database
 const kv = await Deno.openKv();
 
@@ -9,8 +9,8 @@ serve(async (_req: Request) => {
   const id = 1;
 
   const item = {
-    prompt: CoffeeHelper.query,
-    result: CoffeeHelper.generatedMessage,
+    prompt: handler.query,
+    result: handler.generatedMessage,
     id,
   };
 
